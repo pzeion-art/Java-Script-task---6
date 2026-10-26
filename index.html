@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeion Praveen | Event Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Zeion Praveen</h1>
+            <p>Event Management Dashboard</p>
+            <p id="todayDate"></p>
+        </header>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h3>Total Events</h3>
+                <p id="totalEvents">0</p>
+            </div>
+            <div class="summary-card">
+                <h3>Upcoming Events</h3>
+                <p id="upcomingEvents">0</p>
+            </div>
+            <div class="summary-card">
+                <h3>Today's Events</h3>
+                <p id="todayEvents">0</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Add New Event</h2>
+
+            <form id="eventForm">
+                <label for="eventName">Event Name</label>
+                <input type="text" id="eventName"
+                    placeholder="Enter event name" required>
+
+                <label for="eventDate">Event Date</label>
+                <input type="date" id="eventDate" required>
+
+                <label for="category">Category</label>
+                <select id="category" required>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                    <option value="Birthday">Birthday</option>
+                    <option value="Education">Education</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">+ Add Event</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>My Events</h2>
+
+            <input type="search" id="searchInput"
+                placeholder="Search events by name or category">
+
+            <div id="eventList"></div>
+        </section>
+
+        <footer>
+            <p>© 2026 Zeion Praveen | Event Manager</p>
+        </footer>
+    </div>
+ <script src="script.js" defer></script>
+</body>
+</html>
